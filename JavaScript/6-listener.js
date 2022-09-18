@@ -1,6 +1,6 @@
 'use strict';
 
-const iterate = (array, listener) => {
+const iterate = (array, listener) => {        // listener - обработчик событий
   for (const item of array) {
     listener(item);
   }

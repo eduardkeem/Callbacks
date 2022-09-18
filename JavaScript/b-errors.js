@@ -25,7 +25,7 @@ const adder = (value) => {
 // Usage
 
 // error-first
-const maxReached = (err, value) => {
+const maxReached = (err, value) => {      // Контракт ассинхронности, когда ошибка (err) передается первым аргументом
   if (err) throw err;
   console.log('value:', value);
 };

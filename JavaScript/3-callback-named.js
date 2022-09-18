@@ -9,4 +9,4 @@ const print = (fileName, err, data) => {
 const fileName = './1-callback.js';
 
 const callback = print.bind(null, fileName);
-fs.readFile(fileName, 'utf8', callback);
+fs.readFile(fileName, 'utf8', callback);      // fileName и 'utf8' - это один аргумент, callback - второй аргумент

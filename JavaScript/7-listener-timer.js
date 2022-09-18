@@ -2,7 +2,7 @@
 
 const iterate = (array, listener) => {
   let counter = 0;
-  // setImmediate or setTimeout(0) or process.nextTick
+  // setImmediate (не нужен параметр задаржки) or setTimeout(0) or process.nextTick
   setInterval(() => {
     listener(array[counter++]);
     if (counter === array.length) counter = 0;
